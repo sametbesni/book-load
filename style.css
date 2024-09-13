@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #969191;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.box{
+    width: 50px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    animation: flip 1s infinite;
+}
+
+@keyframes flip {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+
+.progress {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.5s;
+}
+
+.status {
+    margin-top: 10px;
+}
